@@ -1,15 +1,14 @@
 import java.util.Scanner;
 
 public class Point{
-    Scanner scanner=new Scanner(System.in);
-    private int x= scanner.nextInt(), y= scanner.nextInt();
+    private double x, y;
 
     public Point() {
-        this.x = x;
-        this.y = y;
+        this.x=x;
+        this.y=y;
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
@@ -17,7 +16,7 @@ public class Point{
         this.x =x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 
@@ -25,14 +24,4 @@ public class Point{
         this.y = y;
     }
 
-    @Override
-    public String toString() {
-        return "Point{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
-    }
-    public void storony(int x, int y){
-
-    }
 }

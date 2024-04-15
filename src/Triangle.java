@@ -1,4 +1,4 @@
-public class Triangle{
+public class Triangle {
     private Point a;
     private Point b;
     private Point c;
@@ -28,21 +28,15 @@ public class Triangle{
     }
 
     public Triangle() {
-        this.a =new Point();
+        this.a = new Point();
         this.b = new Point();
         this.c = new Point();
     }
 
-    @Override
-    public String toString() {
-        return "Triangle{" +
-                "a=" + a +
-                ", b=" + b +
-                ", c=" + c +
-                '}';
+    public double perimetr(double x1, double x2, double x3, double y1, double y2, double y3) {
+        double ab = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+        double ac = Math.sqrt((x3 - x1) * (x3 - x1) + (y3 - y1) * (y3 - y1));
+        double bc = Math.sqrt((x3 - x2) * (x3 - x2) + (y3 - y2) * (y3 - y2));
+        return (ab + ac + bc);
     }
-    /*public double area(Point a, Point b, Point c){
-       double per=(a + b + c);
-       return per;
-    }*/
 }
